@@ -24,7 +24,7 @@ public class TestBase {
 	public TestBase(){
 		pro = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("E:\\Project\\TikiAutomation\\src\\main\\java\\com\\qa\\properties\\TestBase.properties");
+			FileInputStream ip = new FileInputStream("E:\\Github\\TestAutomation\\src\\main\\java\\com\\qa\\properties\\TestBase.properties");
 			pro.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
