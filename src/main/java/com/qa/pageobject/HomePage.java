@@ -16,9 +16,6 @@ import com.qa.data.SearchData;
 public class HomePage extends PageBase {
 	
 	static Properties pro;
-
-	
-	
 	public static void ReadProperties(){
 		
 		pro = new Properties();
@@ -31,11 +28,12 @@ public class HomePage extends PageBase {
 			e.printStackTrace();
 		}
 	}
-	By searchFile = By.xpath(pro.getProperty("searchField"));
 	By closePopup = By.xpath(pro.getProperty("popup"));
+	By searchFile = By.xpath(pro.getProperty("searchField"));
 	
-	public HomePage() {
-		PageFactory.initElements(driver, this);
+	
+	public HomePage(WebDriver driver) {
+		this.driver = driver;
 	}
 	
 	public void closePopup() {

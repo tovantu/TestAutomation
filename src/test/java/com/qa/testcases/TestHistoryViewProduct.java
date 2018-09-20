@@ -7,17 +7,18 @@ import com.qa.pageobject.HomePage;
 
 public class TestHistoryViewProduct extends TestBase {
 	
-	HomePage homepage;
+	HomePage homepage ;
 	
 	public  TestHistoryViewProduct() {
 		super();
 	}
 	@Test()
 	public void historyViewProduct() throws InterruptedException {
-		homepage = new HomePage();
-		Thread.sleep(1000);
+		homepage = new HomePage(driver);
+		
 		homepage.closePopup();
-		Thread.sleep(2000);
+		
 		homepage.sendKeySearch();
+		Thread.sleep(2000);
 	}
 }

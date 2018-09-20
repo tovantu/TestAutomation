@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2018-09-20T04:10:59Z" name="TestNG Session Test Automation Suite" finished-at="2018-09-20T04:11:05Z" duration-ms="6245">
+  <suite started-at="2018-09-20T04:33:02Z" name="TestNG Session Test Automation Suite" finished-at="2018-09-20T04:33:08Z" duration-ms="5814">
     <groups>
     </groups>
-    <test started-at="2018-09-20T04:10:59Z" name="ViewHistory" finished-at="2018-09-20T04:11:05Z" duration-ms="6245">
+    <test started-at="2018-09-20T04:33:02Z" name="ViewHistory" finished-at="2018-09-20T04:33:08Z" duration-ms="5814">
       <class name="com.qa.testcases.TestHistoryViewProduct">
-        <test-method is-config="true" signature="init()[pri:0, instance:com.qa.testcases.TestHistoryViewProduct@5f683daf]" started-at="2018-09-20T04:10:59Z" name="init" finished-at="2018-09-20T04:11:04Z" duration-ms="5523" status="PASS">
+        <test-method is-config="true" signature="init()[pri:0, instance:com.qa.testcases.TestHistoryViewProduct@5f683daf]" started-at="2018-09-20T04:33:02Z" name="init" finished-at="2018-09-20T04:33:07Z" duration-ms="5089" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- init -->
-        <test-method signature="historyViewProduct()[pri:0, instance:com.qa.testcases.TestHistoryViewProduct@5f683daf]" started-at="2018-09-20T04:11:04Z" name="historyViewProduct" finished-at="2018-09-20T04:11:04Z" duration-ms="9" status="FAIL">
+        <test-method signature="historyViewProduct()[pri:0, instance:com.qa.testcases.TestHistoryViewProduct@5f683daf]" started-at="2018-09-20T04:33:07Z" name="historyViewProduct" finished-at="2018-09-20T04:33:07Z" duration-ms="7" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
-at com.qa.pageobject.HomePage.<init>(HomePage.java:34)
+at com.qa.pageobject.HomePage.<init>(HomePage.java:31)
 at com.qa.testcases.TestHistoryViewProduct.historyViewProduct(TestHistoryViewProduct.java:17)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
@@ -48,7 +48,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- historyViewProduct -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.TestHistoryViewProduct@5f683daf]" started-at="2018-09-20T04:11:04Z" name="tearDown" finished-at="2018-09-20T04:11:05Z" duration-ms="693" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.testcases.TestHistoryViewProduct@5f683daf]" started-at="2018-09-20T04:33:07Z" name="tearDown" finished-at="2018-09-20T04:33:08Z" duration-ms="713" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
