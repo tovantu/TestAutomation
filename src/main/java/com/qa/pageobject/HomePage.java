@@ -16,11 +16,11 @@ import com.qa.data.SearchData;
 public class HomePage extends PageBase {
 	
 	static Properties pro;
-	public static void ReadProperties(){
-		
+	
+	public  HomePage() {
 		pro = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("E:\\Github\\TestAutomation\\src\\main\\java\\com\\qa\\pageobject\\properties\\chrome\\homepageChrome.properties");
+			FileInputStream ip = new FileInputStream("src\\main\\java\\com\\qa\\pageobject\\properties\\chrome\\homepageChrome.properties");
 			pro.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();

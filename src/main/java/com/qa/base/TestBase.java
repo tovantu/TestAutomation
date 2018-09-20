@@ -19,12 +19,10 @@ import org.testng.annotations.BeforeTest;
 public class TestBase {
 	public static WebDriver driver;
 	static Properties pro;
-	
-	
 	public TestBase(){
 		pro = new Properties();
 		try {
-			FileInputStream ip = new FileInputStream("E:\\Github\\TestAutomation\\src\\main\\java\\com\\qa\\properties\\TestBase.properties");
+			FileInputStream ip = new FileInputStream("src\\main\\java\\com\\qa\\properties\\TestBase.properties");
 			pro.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -36,10 +34,10 @@ public class TestBase {
 	public static void init() {
 		String browserName = pro.getProperty("browser");
 		if (browserName.equals("chrome")) {
-			System.setProperty("webdriver.chrome.driver", "E:\\Drivers\\chromedriver.exe");
+			System.setProperty("webdriver.chrome.driver", "drivers\\chromedriver.exe");
 			driver = new ChromeDriver();
 		} else if (browserName.equals("firefox")) {
-			System.setProperty("webdriver.gecko.driver","E:\\Drivers\\geckodriver.exe");
+			System.setProperty("webdriver.gecko.driver","drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
 		driver.manage().window().maximize();
