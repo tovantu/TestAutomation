@@ -11,35 +11,29 @@ import org.openqa.selenium.support.PageFactory;
 
 import com.qa.base.PageBase;
 import com.qa.data.SearchData;
+import com.qa.base.CustomBy;
 
 
 public class HomePage extends PageBase {
 	
 	static Properties pro;
 	
-	public  HomePage() {
-		pro = new Properties();
-		try {
-			FileInputStream ip = new FileInputStream("src\\main\\java\\com\\qa\\pageobject\\properties\\chrome\\homepageChrome.properties");
-			pro.load(ip);
-		} catch (FileNotFoundException e) {
-			e.printStackTrace();
-		}catch (IOException e) {
-			e.printStackTrace();
-		}
-	}
-	By closePopup = By.xpath(pro.getProperty("popup"));
-	By searchFile = By.xpath(pro.getProperty("searchField"));
+
+	By closePopup = CustomBy.properties("popup", HomePage.class.getSimpleName());
+	By searchFile = CustomBy.properties("searchField", HomePage.class.getSimpleName());
 	
 	
 	public HomePage(WebDriver driver) {
-		this.driver = driver;
+		super(driver);
+		
 	}
 	
 	public void closePopup() {
+		log.info("**************************************click popup**************************************");
 		click(closePopup);
 	}
 	public void sendKeySearch() {
+		log.info("**************************************send text to search field**************************************");
 		sendText(searchFile, SearchData.keySearch);
 	}
 }
