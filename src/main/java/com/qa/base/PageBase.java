@@ -7,9 +7,13 @@ import java.util.Properties;
 
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.testng.Assert;
+
+import com.sun.javafx.css.StyleCache.Key;
 
 public class PageBase {
 	
@@ -59,4 +63,12 @@ public class PageBase {
 	public void click(String element) {		
 		findElement(element).click();
 	}
+	public void sendKeyEnter(String element) {
+		findElement(element).sendKeys(Keys.ENTER);
+	}
+	public void sendKeyEnter(By element) {
+		findElement(element).sendKeys(Keys.ENTER);
+	}
+	
+	
 }
