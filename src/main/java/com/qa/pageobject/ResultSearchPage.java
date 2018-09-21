@@ -17,7 +17,7 @@ public class ResultSearchPage extends PageBase {
 	}
 	
 	By titleProduct = CustomBy.properties("titleProduct", ResultSearchPage.class.getSimpleName());
-	
+
 	public DetailProductPage clickProduct() {
 		log.info("click product in result Search");
 		click(titleProduct);;

@@ -16,59 +16,99 @@ import org.testng.Assert;
 import com.sun.javafx.css.StyleCache.Key;
 
 public class PageBase {
-	
+
 	public WebDriver driver;
 	static Properties pro;
 	static Logger log = Logger.getLogger(PageBase.class);
-	
+
 	public PageBase(WebDriver driver) {
 
 		this.driver = driver;
-		
+
 	}
-	
-	
-	public WebElement findElement (By element) {
+
+	public WebElement findElement(By element) {
 		return driver.findElement(element);
 	}
-	
-	public WebElement findElement (String element) {
+
+	public WebElement findElement(String element) {
 		return driver.findElement(By.xpath(pro.getProperty(element)));
 	}
-	
+
 	public void hoverElement(By element) {
 		Actions action = new Actions(driver);
-		action.moveToElement(findElement(element)).build().perform();		
+		action.moveToElement(findElement(element)).build().perform();
 	}
-	
+
 	public void hoverElement(String element) {
 		Actions action = new Actions(driver);
-		action.moveToElement(findElement(element)).build().perform();		
+		action.moveToElement(findElement(element)).build().perform();
 	}
-	
+
 	public void sendText(By element, String text) {
 		findElement(element).clear();
 		findElement(element).sendKeys(text);
 	}
-	
+
 	public void sendText(String element, String text) {
 		findElement(element).clear();
 		findElement(element).sendKeys(text);
 	}
-	
-	public void click(By element) {		
+
+	public void click(By element) {
 		findElement(element).click();
 	}
-	
-	public void click(String element) {		
+
+	public void click(String element) {
 		findElement(element).click();
 	}
+
 	public void sendKeyEnter(String element) {
 		findElement(element).sendKeys(Keys.ENTER);
 	}
+
 	public void sendKeyEnter(By element) {
 		findElement(element).sendKeys(Keys.ENTER);
 	}
-	
-	
+
+//	public void waitForVisibleElement(WebElement element, String elementName) {
+//		log.info("+++ Wait For Visible Element: " + elementName);
+//		WebDriverWait wait = new WebDriverWait(getDriver(), waitTime);
+//		wait.until(ExpectedConditions.visibilityOf(element));
+//	}
+//
+//	public void waitForClickableOfElement(WebElement element, String elementName) {
+//		log.info("+++ Wait For Clickable Of Element: " + elementName);
+//		WebDriverWait wait = new WebDriverWait(getDriver(), waitTime);
+//		wait.until(ExpectedConditions.elementToBeClickable(element));
+//	}
+//
+//	public boolean waitForAttributeValueChanged(WebElement element, String elementName, String attributeName,
+//			String attributeValue) {
+//		logger.info("Try to waitForAtrributeValueChanged: " + elementName);
+//		try {
+//			WebDriverWait wait = new WebDriverWait(getDriver(), 10);
+//			wait.until(new ExpectedCondition<Boolean>() {
+//				public Boolean apply(WebDriver driver) {
+//					String actualAttributeValue = null;
+//					if (element.getAttribute(attributeName) != null) {
+//						actualAttributeValue = element.getAttribute(attributeName);
+//						logger.info("Actual Displayed Value: " + actualAttributeValue);
+//					} else {
+//						logger.info(String.format("Attribute %s is null", attributeName));
+//						return false;
+//					}
+//					if (actualAttributeValue.equals(attributeValue))
+//						return true;
+//					else
+//						return false;
+//				}
+//			});
+//			return true;
+//		} catch (Exception e) {
+//			logger.error(e.getMessage());
+//			return false;
+//		}
+//	}
+
 }

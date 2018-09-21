@@ -20,7 +20,6 @@ public class DetailProductPage extends PageBase {
 	public String getTitleProduct () {
 		log.info("Get title product in detail page");
 		String text = findElement(titleDetailProduct).getText();
-		System.out.println("***************************************************************************::::::::::: "+text);
 		return text;
 	}
 	

@@ -8,6 +8,7 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.base.PageBase;
@@ -26,6 +27,8 @@ public class HomePage extends PageBase  {
 	By productWasView = CustomBy.properties("productWasView", HomePage.class.getSimpleName());
 	By imageProductWasView = CustomBy.properties("imageProductWasView", HomePage.class.getSimpleName());
 	
+
+	
 	public HomePage(WebDriver driver) {
 		super(driver);
 		
@@ -34,6 +37,7 @@ public class HomePage extends PageBase  {
 	public void closePopup() {
 		log.info("**************************************click popup**************************************");
 		click(closePopup);
+		
 	}
 	public void sendKeySearch() {
 		log.info("**************************************send text to search field**************************************");
@@ -57,4 +61,5 @@ public class HomePage extends PageBase  {
 		sendKeyEnter(searchField);
 		return new ResultSearchPage(driver);
 	}
+	
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [TestNG Session Test Automation Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="ViewHistory(failed)">
     <classes>
-      <class name="com.qa.testcases.TestHistoryViewProduct">
+      <class name="com.qa.testcases.ViewProduct">
         <methods>
-          <include name="historyViewProduct"/>
           <include name="init"/>
           <include name="tearDown"/>
+          <include name="historyViewProduct"/>
         </methods>
-      </class> <!-- com.qa.testcases.TestHistoryViewProduct -->
+      </class> <!-- com.qa.testcases.ViewProduct -->
     </classes>
   </test> <!-- ViewHistory(failed) -->
 </suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->

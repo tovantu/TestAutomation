@@ -6,7 +6,7 @@
 		
 		<classes>
 			
-			<class name="com.qa.testcases.TestHistoryViewProduct"/>
+			<class name="com.qa.testcases.ViewProduct"/>
 
 		</classes>
 	</test>

@@ -1,20 +1,31 @@
-2018-09-21 10:48:42,373  INFO [main] TestBase:31 - **************************************read properties**************************************
-2018-09-21 10:48:42,410  INFO [main] TestBase:44 - **************************************init**************************************
-2018-09-21 10:49:02,848  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-21 10:49:02,849  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-21 10:49:02,849  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-21 10:49:02,849  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-21 10:49:02,850  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-21 10:49:02,850  INFO [main] HomePage:35 - **************************************click popup**************************************
-2018-09-21 10:49:02,939  INFO [main] HomePage:39 - **************************************send text to search field**************************************
-2018-09-21 10:49:04,049  INFO [main] HomePage:56 - enter
-2018-09-21 10:49:05,794  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-21 10:49:06,796  INFO [main] ResultSearchPage:22 - click product in result Search
-2018-09-21 10:49:06,956  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-21 10:49:06,972  INFO [main] DetailProductPage:21 - Get title product in detail page
-2018-09-21 10:49:09,070  INFO [main] HomePage:43 - Click logoMain
-2018-09-21 10:49:10,863  INFO [main] HomePage:47 - Move to Product Was View
-2018-09-21 10:49:11,971  INFO [main] HomePage:51 - click image product was view
-2018-09-21 10:49:13,246  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-21 10:49:14,247  INFO [main] DetailProductPage:21 - Get title product in detail page
-2018-09-21 10:49:14,332  INFO [main] TestBase:63 - **************************************tear down**************************************
+2018-09-21 17:28:16,832  INFO [main] TestBase:31 - **************************************read properties**************************************
+2018-09-21 17:28:16,863  INFO [main] TestBase:44 - **************************************init**************************************
+2018-09-21 17:28:22,211  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-21 17:28:22,212  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-21 17:28:22,212  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-21 17:28:22,212  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-21 17:28:22,213  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-21 17:28:22,213  INFO [main] ViewProduct:35 - Close popup
+2018-09-21 17:28:22,213  INFO [main] HomePage:38 - **************************************click popup**************************************
+2018-09-21 17:28:22,345  INFO [main] ViewProduct:38 - send key search
+2018-09-21 17:28:22,346  INFO [main] HomePage:43 - **************************************send text to search field**************************************
+2018-09-21 17:28:22,450  INFO [main] ViewProduct:41 - enter key
+2018-09-21 17:28:22,451  INFO [main] HomePage:60 - enter
+2018-09-21 17:28:23,435  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-21 17:28:23,436  INFO [main] ViewProduct:44 - click to product
+2018-09-21 17:28:23,436  INFO [main] ResultSearchPage:22 - click product in result Search
+2018-09-21 17:28:23,570  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-21 17:28:23,570  INFO [main] ViewProduct:47 - handle window
+2018-09-21 17:28:23,580  INFO [main] ViewProduct:51 - get titile product first
+2018-09-21 17:28:23,581  INFO [main] DetailProductPage:21 - Get title product in detail page
+2018-09-21 17:28:24,743  INFO [main] ViewProduct:56 - click logo menu
+2018-09-21 17:28:24,743  INFO [main] HomePage:47 - Click logoMain
+2018-09-21 17:28:25,315  INFO [main] ViewProduct:59 - Move to product was view
+2018-09-21 17:28:25,315  INFO [main] HomePage:51 - Move to Product Was View
+2018-09-21 17:28:25,408  INFO [main] ViewProduct:62 - click into image product was view
+2018-09-21 17:28:25,408  INFO [main] HomePage:55 - click image product was view
+2018-09-21 17:28:26,704  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-21 17:28:26,704  INFO [main] ViewProduct:65 - get titile product second
+2018-09-21 17:28:26,705  INFO [main] DetailProductPage:21 - Get title product in detail page
+2018-09-21 17:28:26,763  INFO [main] ViewProduct:68 - Verify title product
+2018-09-21 17:28:26,766  INFO [main] TestBase:63 - **************************************tear down**************************************
