@@ -15,7 +15,7 @@ public class PageBase {
 	
 	public WebDriver driver;
 	static Properties pro;
-	public static Logger log = Logger.getLogger(PageBase.class);
+	static Logger log = Logger.getLogger(PageBase.class);
 	
 	public PageBase(WebDriver driver) {
 

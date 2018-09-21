@@ -1,5 +1,5 @@
 package com.qa.data;
 
-public class SearchData {
+public class HomePageData {
 	 public static  String keySearch = "iphone";
 }

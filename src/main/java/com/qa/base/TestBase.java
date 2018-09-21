@@ -22,9 +22,9 @@ import com.relevantcodes.extentreports.model.Log;
 
 public class TestBase {
 	public static WebDriver driver;
-	static Properties pro;
+	public static Properties pro;
 	
-	public static Logger log = Logger.getLogger(TestBase.class);
+	static Logger log = Logger.getLogger(TestBase.class);
 	
 	
 	public TestBase(){
@@ -50,6 +50,7 @@ public class TestBase {
 			System.setProperty("webdriver.gecko.driver","drivers\\geckodriver.exe");
 			driver = new FirefoxDriver();
 		}
+		
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
