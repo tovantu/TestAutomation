@@ -22,7 +22,9 @@ public class HomePage extends PageBase {
 
 	By closePopup = CustomBy.properties("popup", HomePage.class.getSimpleName());
 	By searchFile = CustomBy.properties("searchField", HomePage.class.getSimpleName());
-	
+	By logoMain = CustomBy.properties("logoMain", HomePage.class.getSimpleName());
+	By productWasView = CustomBy.properties("productWasView", HomePage.class.getSimpleName());
+	By imageProductWasView = CustomBy.properties("imageProductWasView", HomePage.class.getSimpleName());
 	
 	public HomePage(WebDriver driver) {
 		super(driver);
@@ -36,5 +38,16 @@ public class HomePage extends PageBase {
 	public void sendKeySearch() {
 		log.info("**************************************send text to search field**************************************");
 		sendText(searchFile, HomePageData.keySearch);
+	}
+	public void clickLogo() {
+		log.info("Click logoMain");
+		click(logoMain);
+	}
+	public void moveToProductWasView() {
+		log.info("Move to Product Was View");
+		hoverElement(productWasView);
+	}
+	public void clickImageProductWasView() {
+		click(imageProductWasView);
 	}
 }
