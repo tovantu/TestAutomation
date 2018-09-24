@@ -2,11 +2,11 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="TestNG Session Test Automation Suite" parallel="none">
 	
-	<test name="ViewHistory">
+	<test name="TestAddtoCart">
 		
 		<classes>
 			
-			<class name="com.qa.testcases.TestHistoryViewProduct"/>
+			<class name="com.qa.testcases.TestAddtoCart"/>
 
 		</classes>
 	</test>

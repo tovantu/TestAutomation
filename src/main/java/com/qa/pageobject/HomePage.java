@@ -25,6 +25,9 @@ public class HomePage extends PageBase {
 	By logoMain = CustomBy.properties("logoMain", HomePage.class.getSimpleName());
 	By productWasView = CustomBy.properties("productWasView", HomePage.class.getSimpleName());
 	By imageProductWasView = CustomBy.properties("imageProductWasView", HomePage.class.getSimpleName());
+	By CartButton = CustomBy.properties("cartbutton", HomePage.class.getSimpleName());
+	By SignInHover = CustomBy.properties("signinhover", HomePage.class.getSimpleName());
+	By SignInButton = CustomBy.properties("signinbutton", HomePage.class.getSimpleName());
 	
 	public HomePage(WebDriver driver) {
 		super(driver);
@@ -32,11 +35,11 @@ public class HomePage extends PageBase {
 	}
 	
 	public void closePopup() {
-		log.info("**************************************click popup**************************************");
+		log.info("Click popup");
 		click(closePopup);
 	}
 	public void sendKeySearch() {
-		log.info("**************************************send text to search field**************************************");
+		log.info("Send text to search field");
 		sendText(searchFile, HomePageData.keySearch);
 	}
 	public void clickLogo() {
@@ -50,4 +53,22 @@ public class HomePage extends PageBase {
 	public void clickImageProductWasView() {
 		click(imageProductWasView);
 	}
+	public void clickCart() {
+		log.info("Send click to Cart button");
+		click(CartButton);
+	}
+	public void HoverSignInButton () {
+		log.info("Hover to Sign-in button");
+		hoverElement(SignInHover);
+	}
+	public SignInPage clickSignInButton() {
+		log.info("Click Sign-in button");
+		click(SignInButton);
+		return new SignInPage(driver);
+	}
+	public void sendKeyEnter() {
+		log.info("Click Enter");
+		sendKeyEnter(searchFile);
+	}
+	
 }
