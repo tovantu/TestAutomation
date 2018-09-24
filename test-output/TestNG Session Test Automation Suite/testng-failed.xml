@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestNG Session Test Automation Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="ViewHistory(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestNG Session Test Automation Suite]">
+  <test thread-count="5" name="TestAddtoCart(failed)">
     <classes>
-      <class name="com.qa.testcases.ViewProduct">
+      <class name="com.qa.testcases.TestAddtoCart">
         <methods>
+          <include name="AddtoCart"/>
           <include name="init"/>
           <include name="tearDown"/>
-          <include name="historyViewProduct"/>
         </methods>
-      </class> <!-- com.qa.testcases.ViewProduct -->
+      </class> <!-- com.qa.testcases.TestAddtoCart -->
     </classes>
-  </test> <!-- ViewHistory(failed) -->
+  </test> <!-- TestAddtoCart(failed) -->
 </suite> <!-- Failed suite [TestNG Session Test Automation Suite] -->

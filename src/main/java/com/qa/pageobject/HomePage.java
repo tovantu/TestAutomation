@@ -8,7 +8,6 @@ import java.util.Properties;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.PageFactory;
 
 import com.qa.base.PageBase;
@@ -16,18 +15,19 @@ import com.qa.data.HomePageData;
 import com.qa.base.CustomBy;
 
 
-public class HomePage extends PageBase  {
+public class HomePage extends PageBase {
 	
 	
 	static Logger log = Logger.getLogger(HomePage.class);
 
 	By closePopup = CustomBy.properties("popup", HomePage.class.getSimpleName());
-	By searchField = CustomBy.properties("searchField", HomePage.class.getSimpleName());
+	By searchFile = CustomBy.properties("searchField", HomePage.class.getSimpleName());
 	By logoMain = CustomBy.properties("logoMain", HomePage.class.getSimpleName());
 	By productWasView = CustomBy.properties("productWasView", HomePage.class.getSimpleName());
 	By imageProductWasView = CustomBy.properties("imageProductWasView", HomePage.class.getSimpleName());
-	
-
+	By CartButton = CustomBy.properties("cartbutton", HomePage.class.getSimpleName());
+	By SignInHover = CustomBy.properties("signinhover", HomePage.class.getSimpleName());
+	By SignInButton = CustomBy.properties("signinbutton", HomePage.class.getSimpleName());
 	
 	public HomePage(WebDriver driver) {
 		super(driver);
@@ -35,13 +35,12 @@ public class HomePage extends PageBase  {
 	}
 	
 	public void closePopup() {
-		log.info("**************************************click popup**************************************");
+		log.info("Click popup");
 		click(closePopup);
-		
 	}
 	public void sendKeySearch() {
-		log.info("**************************************send text to search field**************************************");
-		sendText(searchField, HomePageData.keySearch);
+		log.info("Send text to search field");
+		sendText(searchFile, HomePageData.keySearch);
 	}
 	public void clickLogo() {
 		log.info("Click logoMain");
@@ -51,15 +50,25 @@ public class HomePage extends PageBase  {
 		log.info("Move to Product Was View");
 		hoverElement(productWasView);
 	}
-	public DetailProductPage clickImageProductWasView() {
-		log.info("click image product was view");
+	public void clickImageProductWasView() {
 		click(imageProductWasView);
-		return new DetailProductPage(driver);
 	}
-	public ResultSearchPage sendKeyEnter() {
-		log.info("enter");
-		sendKeyEnter(searchField);
-		return new ResultSearchPage(driver);
+	public void clickCart() {
+		log.info("Send click to Cart button");
+		click(CartButton);
+	}
+	public void HoverSignInButton () {
+		log.info("Hover to Sign-in button");
+		hoverElement(SignInHover);
+	}
+	public void clickSignInButton() {
+		log.info("Click Sign-in button");
+		click(SignInButton);
+
+	}
+	public void sendKeyEnter() {
+		log.info("Click Enter");
+		sendKeyEnter(searchFile);
 	}
 	
 }

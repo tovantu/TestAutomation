@@ -1,16 +1,10 @@
 package com.qa.testcases;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.Set;
-
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.interactions.Actions;
-import org.testng.Assert;
 import org.testng.annotations.Test;
+import java.util.ArrayList;
 
+import org.testng.Assert;
 import com.qa.base.TestBase;
 import com.qa.pageobject.DetailProductPage;
 import com.qa.pageobject.HomePage;
@@ -31,41 +25,44 @@ public class ViewProduct extends TestBase {
 	public void historyViewProduct() throws InterruptedException {
 
 		homepage = new HomePage(driver);
-		
-		log.info("Close popup");
+
+		log.info("Test*************Close popup");
 		homepage.closePopup();
-		
-		log.info("send key search");
+
+		log.info("Test*************send key search");
 		homepage.sendKeySearch();
-		
-		log.info("enter key");
-		resultSearchPage = homepage.sendKeyEnter();
-		
-		log.info("click to product");
-		detailProductPage = resultSearchPage.clickProduct();
-		
-		log.info("handle window");
+
+		log.info("Test*************enter key");
+		homepage.sendKeyEnter();
+
+		resultSearchPage = new ResultSearchPage(driver);
+		log.info("Test*************click to product");
+		resultSearchPage.ClickProduct();
+
+
+		log.info("Test*************handle window");
 		ArrayList tabs = new ArrayList(driver.getWindowHandles());
 		driver.switchTo().window((String) tabs.get(1));
-		
-		log.info("get titile product first");
+
+		detailProductPage = new DetailProductPage(driver);
+		log.info("Test*************get titile product first");
 		String titlefirst = detailProductPage.getTitleProduct();
 		driver.close();
 		driver.switchTo().window((String) tabs.get(0));
-		
-		log.info("click logo menu");
+
+		log.info("Test*************click logo menu");
 		homepage.clickLogo();
-		
-		log.info("Move to product was view");
+
+		log.info("Test*************Move to product was view");
 		homepage.moveToProductWasView();
-		
-		log.info("click into image product was view");
-		detailProductPage = homepage.clickImageProductWasView();
-		
-		log.info("get titile product second");
+
+		log.info("Test*************click into image product was view");
+		homepage.clickImageProductWasView();
+
+		log.info("Test*************get titile product second");
 		String titlesecond = detailProductPage.getTitleProduct();
-		
-		log.info("Verify title product");
+
+		log.info("Test*************Verify title product");
 		Assert.assertEquals(titlesecond, titlefirst);
 
 	}

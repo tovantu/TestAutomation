@@ -51,10 +51,11 @@ public class TestBase {
 			driver = new FirefoxDriver();
 		}
 		
-		driver.manage().window().maximize();
+		
 		driver.manage().deleteAllCookies();
 		driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+		driver.manage().window().maximize();
 		driver.get(pro.getProperty("url"));
 	}
 	
