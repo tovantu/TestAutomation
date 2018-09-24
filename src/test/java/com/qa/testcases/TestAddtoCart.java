@@ -70,7 +70,7 @@ public class TestAddtoCart extends TestBase {
 		String titleProductInCartPage = cartPage.getTitle().substring(0,10);
 		log.info(titleProdcut);
 		log.info(titleProductInCartPage);
-//		Assert.assertEquals(titleProductInCartPage,titleProdcut);
+		Assert.assertEquals(titleProductInCartPage,titleProdcut);
 		
 	}
 }
