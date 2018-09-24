@@ -1,46 +1,46 @@
-2018-09-24 14:21:15,105  INFO [main] TestBase:31 - **************************************read properties**************************************
-2018-09-24 14:21:15,143  INFO [main] TestBase:44 - **************************************init**************************************
-2018-09-24 14:21:20,834  INFO [main] TestBase:31 - **************************************read properties**************************************
-2018-09-24 14:21:20,838  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:20,838  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:20,839  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:20,839  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:20,840  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:20,840  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:20,840  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:20,840  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:20,841  INFO [main] TestAddtoCart:31 - Close Popup
-2018-09-24 14:21:20,841  INFO [main] HomePage:38 - Click popup
-2018-09-24 14:21:20,996  INFO [main] TestAddtoCart:33 - Hover Sign-in button
-2018-09-24 14:21:20,997  INFO [main] HomePage:61 - Hover to Sign-in button
-2018-09-24 14:21:21,055  INFO [main] HomePage:65 - Click Sign-in button
-2018-09-24 14:21:21,215  INFO [main] TestBase:31 - **************************************read properties**************************************
-2018-09-24 14:21:21,216  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:21,216  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:21,216  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:21,216  INFO [main] SignInPage:33 - Send text to Sign-in field
-2018-09-24 14:21:21,417  INFO [main] TestAddtoCart:39 - sendkey
-2018-09-24 14:21:21,417  INFO [main] SignInPage:38 - Send text to Password field
-2018-09-24 14:21:21,524  INFO [main] SignInPage:42 - Click Sign-in to account
-2018-09-24 14:21:22,609  INFO [main] HomePage:42 - Send text to search field
-2018-09-24 14:21:23,056  INFO [main] HomePage:70 - Click Enter
-2018-09-24 14:21:24,375  INFO [main] TestBase:31 - **************************************read properties**************************************
-2018-09-24 14:21:24,375  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:24,376  INFO [main] TestAddtoCart:50 - before close popup
-2018-09-24 14:21:24,376  INFO [main] HomePage:38 - Click popup
-2018-09-24 14:21:24,486  INFO [main] TestAddtoCart:54 - before click product
-2018-09-24 14:21:24,486  INFO [main] ResultSearchPage:36 - Click product
-2018-09-24 14:21:24,642  INFO [main] ResultSearchPage:30 - Get Product Name
-2018-09-24 14:21:24,743  INFO [main] TestAddtoCart:61 - before new page
-2018-09-24 14:21:24,744  INFO [main] TestBase:31 - **************************************read properties**************************************
-2018-09-24 14:21:24,744  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:24,744  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:24,745  INFO [main] TestAddtoCart:63 - before click add to card
-2018-09-24 14:21:24,745  INFO [main] DetailProductPage:45 - Send click to Add to Cart
-2018-09-24 14:21:26,845  INFO [main] TestAddtoCart:66 - before click cart button
-2018-09-24 14:21:26,845  INFO [main] HomePage:57 - Send click to Cart button
-2018-09-24 14:21:28,745  INFO [main] TestBase:31 - **************************************read properties**************************************
-2018-09-24 14:21:28,746  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
-2018-09-24 14:21:28,912  INFO [main] TestAddtoCart:71 - Ốp Bện Dây
-2018-09-24 14:21:28,912  INFO [main] TestAddtoCart:72 - Ốp Bện Dây
-2018-09-24 14:21:28,915  INFO [main] TestBase:64 - **************************************tear down**************************************
+2018-09-24 15:34:47,494  INFO [main] TestBase:31 - **************************************read properties**************************************
+2018-09-24 15:34:47,532  INFO [main] TestBase:44 - **************************************init**************************************
+2018-09-24 15:34:52,648  INFO [main] TestBase:31 - **************************************read properties**************************************
+2018-09-24 15:34:52,653  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:52,653  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:52,654  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:52,654  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:52,654  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:52,654  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:52,654  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:52,655  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:52,655  INFO [main] TestAddtoCart:31 - Close Popup
+2018-09-24 15:34:52,655  INFO [main] HomePage:38 - Click popup
+2018-09-24 15:34:53,107  INFO [main] TestAddtoCart:33 - Hover Sign-in button
+2018-09-24 15:34:53,107  INFO [main] HomePage:64 - Hover to Sign-in button
+2018-09-24 15:34:53,244  INFO [main] HomePage:68 - Click Sign-in button
+2018-09-24 15:34:53,576  INFO [main] TestBase:31 - **************************************read properties**************************************
+2018-09-24 15:34:53,576  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:53,576  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:53,576  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:53,577  INFO [main] SignInPage:33 - Send text to Sign-in field
+2018-09-24 15:34:53,628  INFO [main] TestAddtoCart:39 - sendkey
+2018-09-24 15:34:53,628  INFO [main] SignInPage:38 - Send text to Password field
+2018-09-24 15:34:53,693  INFO [main] SignInPage:42 - Click Sign-in to account
+2018-09-24 15:34:56,490  INFO [main] HomePage:42 - Send text to search field
+2018-09-24 15:34:56,529  INFO [main] HomePage:73 - Click Enter
+2018-09-24 15:34:56,563  INFO [main] TestBase:31 - **************************************read properties**************************************
+2018-09-24 15:34:56,563  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:56,563  INFO [main] TestAddtoCart:50 - before close popup
+2018-09-24 15:34:56,563  INFO [main] HomePage:38 - Click popup
+2018-09-24 15:34:58,081  INFO [main] TestAddtoCart:54 - before click product
+2018-09-24 15:34:58,082  INFO [main] ResultSearchPage:36 - Click product
+2018-09-24 15:34:58,642  INFO [main] ResultSearchPage:30 - Get Product Name
+2018-09-24 15:34:58,777  INFO [main] TestAddtoCart:61 - before new page
+2018-09-24 15:34:58,778  INFO [main] TestBase:31 - **************************************read properties**************************************
+2018-09-24 15:34:58,778  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:58,778  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:34:58,779  INFO [main] TestAddtoCart:63 - before click add to card
+2018-09-24 15:34:58,779  INFO [main] DetailProductPage:45 - Send click to Add to Cart
+2018-09-24 15:35:00,883  INFO [main] TestAddtoCart:66 - before click cart button
+2018-09-24 15:35:00,883  INFO [main] HomePage:60 - Send click to Cart button
+2018-09-24 15:35:03,068  INFO [main] TestBase:31 - **************************************read properties**************************************
+2018-09-24 15:35:03,068  INFO [main] CustomBy:32 - **************************************read xpath properties**************************************
+2018-09-24 15:35:03,084  INFO [main] TestAddtoCart:71 - Ốp Bện Dây
+2018-09-24 15:35:03,084  INFO [main] TestAddtoCart:72 - Ốp Bện Dây
+2018-09-24 15:35:03,086  INFO [main] TestBase:64 - **************************************tear down**************************************

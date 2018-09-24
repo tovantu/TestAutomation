@@ -1,6 +1,7 @@
 package com.qa.testcases;
 
 import org.apache.log4j.Logger;
+import org.openqa.selenium.JavascriptExecutor;
 import org.testng.annotations.Test;
 import java.util.ArrayList;
 
@@ -47,13 +48,20 @@ public class ViewProduct extends TestBase {
 		detailProductPage = new DetailProductPage(driver);
 		log.info("Test*************get titile product first");
 		String titlefirst = detailProductPage.getTitleProduct();
+		log.info("Test*************"+titlefirst);
 		driver.close();
 		driver.switchTo().window((String) tabs.get(0));
+
+		driver.navigate().refresh();
+
+//		homepage.scrollToLogo();
+
 
 		log.info("Test*************click logo menu");
 		homepage.clickLogo();
 
 		log.info("Test*************Move to product was view");
+
 		homepage.moveToProductWasView();
 
 		log.info("Test*************click into image product was view");
@@ -61,6 +69,7 @@ public class ViewProduct extends TestBase {
 
 		log.info("Test*************get titile product second");
 		String titlesecond = detailProductPage.getTitleProduct();
+		log.info("Test*************"+titlesecond);
 
 		log.info("Test*************Verify title product");
 		Assert.assertEquals(titlesecond, titlefirst);

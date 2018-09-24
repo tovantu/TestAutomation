@@ -6,10 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 import org.apache.log4j.Logger;
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -19,7 +16,7 @@ public class PageBase extends TestBase{
 //	public WebDriver driver;
 	static Properties pro;
 	static Logger log = Logger.getLogger(PageBase.class);
-	private static final int waitTime = 30;
+	private static final int waitTime = 20;
 	
 	public PageBase(WebDriver driver) {
 
@@ -56,20 +53,33 @@ public class PageBase extends TestBase{
 		findElement(element).sendKeys(text);
 	}
 	
-	public void click(By element) {		
+	public void click(By element) {
+		waitForElementToBeClickable(findElement(element));
 		findElement(element).click();
 	}
 	
 	public void click(String element) {		
 		findElement(element).click();
 	}
+
+	public void scrollToElement(By element){
+		WebElement ele = findElement(element);
+		JavascriptExecutor js =  (JavascriptExecutor) driver ;
+		js.executeScript("arguments[0].scrollIntoView(true);", ele);
+	}
+
 	public void sendKeyEnter(By element){
 		findElement(element).sendKeys(Keys.ENTER);
 	}
+
 	public void waitForVisibleElement(WebElement element, String elementName) {
 		log.info("+++ Wait For Visible Element: " + elementName);
 		WebDriverWait wait = new WebDriverWait(driver, waitTime);
 		wait.until(ExpectedConditions.visibilityOf(element));
+	}
+	public void waitForElementToBeClickable(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, waitTime);
+		wait.until(ExpectedConditions.elementToBeClickable(element));
 	}
 //		public void waitForVisibleElement(WebElement element, String elementName) {
 //		log.info("+++ Wait For Visible Element: " + elementName);

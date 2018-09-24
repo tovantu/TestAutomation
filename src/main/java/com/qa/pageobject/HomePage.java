@@ -42,6 +42,9 @@ public class HomePage extends PageBase {
 		log.info("Send text to search field");
 		sendText(searchFile, HomePageData.keySearch);
 	}
+	public void scrollToLogo(){
+		scrollToElement(logoMain);
+	}
 	public void clickLogo() {
 		log.info("Click logoMain");
 		click(logoMain);
